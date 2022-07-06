@@ -13,7 +13,7 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
     const bannerSize = 'medium'
     const shareURL = 'https://www.lesslens.com/demo.html'
     const bannerLink = 'https://apps.apple.com/app/apple-store/id1535675035?pt=122143363&ct=landing&mt=8'
-    const href = model + '#allowsContentScaling=' + modelScaling + '&custom=' + bannerURL + '&customHeight=' + bannerSize + '&canonicalWebPageURL=' + shareURL
+    const href = model + '?allowsContentScaling=' + modelScaling + '&custom=' + bannerURL + '&customHeight=' + bannerSize + '&canonicalWebPageURL=' + shareURL
 
     a.innerHTML = 'Virtual Try-on';
     a.id = 'tryon';
