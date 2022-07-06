@@ -16,7 +16,7 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
     const href = model + '#allowsContentScaling=' + modelScaling + '&custom=' + bannerURL + '&customHeight=' + bannerSize + '&canonicalWebPageURL=' + shareURL
 
     a.innerHTML = 'Virtual Try-on';
-    a.id = 'tryon';
+    a.id = 'tryon_1';
     a.rel='ar';
     a.href = href;
     tryon.appendChild(a);
@@ -33,7 +33,7 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
     }, false);
 
     if (params.has("test")) {
-        document.getElementById('tryon').click();
+        document.getElementById('tryon_1').click();
     }
 
 
