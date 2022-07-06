@@ -20,13 +20,21 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
     a.rel='ar';
     a.href = href;
     tryon.appendChild(a);
-    a.appendChild(img)
+    a.appendChild(img);
+
+    const params = new URLSearchParams(window.location.search);
+
+  
 
     a.addEventListener("message", function (event) { 
     if (event.data == "_apple_ar_quicklook_button_tapped") {
         window.location.href = bannerLink ;
     }
     }, false);
+
+    if (params.has("test")) {
+        document.getElementById('tryon').click();
+    }
 
 
 } else {
