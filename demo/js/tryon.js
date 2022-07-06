@@ -16,15 +16,11 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
     const href = model + '#allowsContentScaling=' + modelScaling + '&custom=' + bannerURL + '&customHeight=' + bannerSize + '&canonicalWebPageURL=' + shareURL
 
     a.innerHTML = 'Virtual Try-on';
-    a.id = 'tryon_1';
+    a.id = 'tryon_link';
     a.rel='ar';
     a.href = href;
     tryon.appendChild(a);
     a.appendChild(img);
-
-    const params = new URLSearchParams(window.location.search);
-
-  
 
     a.addEventListener("message", function (event) { 
     if (event.data == "_apple_ar_quicklook_button_tapped") {
@@ -32,8 +28,10 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
     }
     }, false);
 
-    if (params.has("test")) {
-        document.getElementById('tryon_1').click();
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.has("show_ar")) {
+        document.getElementById(a.id).click();
     }
 
 
