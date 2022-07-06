@@ -26,7 +26,7 @@ const scene = new THREE.Scene()
 
 const camera = new THREE.PerspectiveCamera(  24, container.clientWidth / container.clientHeight, 0.01, 10 )
 camera.position.set(1, 0.5, 1)
-camera.zoom = Math.abs( container.clientWidth / container.clientHeight / Math.sin( camera.fov / 2 ) );
+camera.zoom = Math.abs( container.clientWidth / container.clientHeight / Math.sin( camera.fov / 2 ) ) - 0.1;
 camera.updateProjectionMatrix();
 
 // Orbit Controls
