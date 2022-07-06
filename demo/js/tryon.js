@@ -9,7 +9,7 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
 
     const model = 'demo/111.reality'
     const modelScaling = '1'
-    const bannerURL = '192.168.0.28:5500/demo/banner.html'
+    const bannerURL = 'https://www.lesslens.com/demo/banner.html'
     const bannerSize = 'medium'
     const shareURL = 'https://www.lesslens.com/demo.html'
     const bannerLink = 'https://apps.apple.com/app/apple-store/id1535675035?pt=122143363&ct=landing&mt=8'
