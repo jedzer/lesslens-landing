@@ -31,7 +31,7 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
     }
     }, false);
 
-    const params = new URLSearchParams( pageURL );
+    const params = new URLSearchParams( window.location.search );
 
     if (params.has("show_ar")) {
         document.getElementById(a.id).click();
