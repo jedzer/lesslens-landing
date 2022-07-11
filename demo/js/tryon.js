@@ -1,6 +1,7 @@
 import QrCreator from 'https://cdn.jsdelivr.net/npm/qr-creator/dist/qr-creator.es6.min.js'
 
-const tryon = document.getElementById('tryon'); // Container id
+const tryon = document.querySelector('#tryon');
+const qr = document.querySelector('#qr'); // Container id
 
 const pageURL = window.location.href // Triggered page
 
@@ -13,19 +14,24 @@ const bannerLink = 'https://apps.apple.com/app/apple-store/id1535675035?pt=12214
 
 const href = modelURL + '#allowsContentScaling=' + modelScaling + '&custom=' + bannerURL + '&customHeight=' + bannerSize + '&canonicalWebPageURL=' + pageURL
 
+const modal = document.querySelector('#qr-modal')
+modal.id = 'tryon-modal'
+modal.style.display = 'none'
+
+tryon.style.display = 'none'
+qr.style.display = 'none'
+
 if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.userAgent)) {
 
-    const a = document.createElement('a');
+    tryon.style.display = 'flex'
+
     const img = document.createElement('img')
 
-    a.innerHTML = 'Virtual Try-on';
-    a.id = 'tryon_link';
-    a.rel='ar';
-    a.href = href;
-    tryon.appendChild(a);
-    a.appendChild(img);
+    tryon.rel='ar';
+    tryon.href = href;
+    tryon.appendChild(img);
 
-    a.addEventListener("message", function (event) { 
+    tryon.addEventListener("message", function (event) { 
     if (event.data == "_apple_ar_quicklook_button_tapped") {
         window.location.href = bannerLink ;
     }
@@ -40,13 +46,19 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
 
 } else {
 
+    qr.style.display = 'flex'
+
+    qr.onclick = () => { modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex' };
+    qr.appendChild(modal);
+
+
     new QrCreator.render({
         text: pageURL + '?show_ar',
         radius: 0, // 0.0 to 0.5
-        ecLevel: 'M', // L, M, Q, H
+        ecLevel: 'H', // L, M, Q, H
         fill: '#000000', // foreground color
         background: '#FFFFFF', // color or null for transparent
-        size: 200 // in pixels
-      }, tryon );
+        size: 300 // in pixels
+      }, document.querySelector('#qr-code') );
     
 }

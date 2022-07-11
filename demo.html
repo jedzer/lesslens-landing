@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <title>LessLens - Discover a new way to choose glasses</title>
+
+    <meta property="og:title" content="LessLens - Discover a new way to choose glasses">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="LessLens">
+    <meta name="twitter:site" content="@less-lens">
+    <meta name="twitter:creator" content="@less-lens">
+    <meta property="og:url" content="https://lesslens.com/demo">
+
+    <meta property="og:url" content="https://lesslens.com/demo">
+    <meta property="og:description" content="LessLens is a smart home trial app that allows you to try on and purchase your favorite glasses and sunglasses without leaving the comfort of your home.">
+    <meta name="description" content="LessLens is a smart home trial app that allows you to try on and purchase your favorite glasses and sunglasses without leaving the comfort of your home.">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="canonical" href="https://lesslens.com/demo">
 
     <link rel="stylesheet" href="demo/style.css">
     <link rel="stylesheet" href="demo/css/flickity.css" media="screen">
@@ -14,13 +32,21 @@
 
 </head>
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWQFHL3"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header>
         <div class="menu">
             <img src="img/logo.svg" alt="logo" class="logo-icon">
             <div class="logo-title">LESS LENS</div>
-            <a href="https://www.instagram.com/less.lens/" target="_blank"><img src="./img/instagram.svg"></a>
-            <a href="https://twitter.com/lens_less" target="_blank"><img src="./img/twitter.svg"></a>
-            <a href="mailto:info@lesslens.com"><img src="./img/mail.svg"></a>
+            <p class="icon icon-32 icon-phone"></p>
+            <span>+34645168921</span>
+            <a href="mailto:info@lesslens.com">
+                <p class="icon icon-32 icon-e-mail"></p>
+            </a>
         </div>
         <div class="color-strip"></div>
 
@@ -29,40 +55,64 @@
     </header>
 
     <section>
-        <div id="scene"></div>
+        <div id="scene">
+            <div class="scene-bar">
+                <div class="scene-guide">
+                    <span class="icon icon-32 icon-lmb"></span>
+                    <p>Rotate</p>
+                    <div></div>
+                    <span class="icon icon-32 icon-wheel"></span>
+                    <p>Zoom</p>
+                </div>
+
+                <a id="qr">
+                    <span class="icon icon-32 icon-code"></span>
+                    Virtual Try-on on your iPhone
+                </a>
+
+                <a id="tryon">Virtual Try-on</a>
+
+                <div id="qr-modal">
+                    <div id="qr-code"></div>
+                    <p>
+                        These unisex sunglasses in polycarbonate feature round frames, 
+                        and temples that get narrower around the ears, with a colourful 
+                        rubberised insert on the underside of the end tips for better grip.
+                        The other contrast details are quite original too, with a printed 
+                        logo on the temple and an endpiece that wraps from the front to the hinges.
+                    </p>
+                </div>
+            </div>
+        </div>
+
 
         <div class="description">
-            <h1>PLD 2129/S</h1>
+            <h1>Ray-Ban</h1>
+            <h2>Clubmaster Square</h2>
             <small>These unisex sunglasses in polycarbonate feature round frames, 
                 and temples that get narrower around the ears, with a colourful 
                 rubberised insert on the underside of the end tips for better grip.
                  The other contrast details are quite original too, with a printed 
                  logo on the temple and an endpiece that wraps from the front to the hinges.
             </small>
-            <div id="tryon"></div>
             <hr>
             <div class="feature">
-                <img src="demo/img/3d.svg" alt="">
+                <span class="icon icon-48 icon-frame"></span>
                 <p>Shape</p>
                 <h6>Round / oval </h6>
             </div>
             <div class="feature">
-                <img src="demo/img/3d.svg" alt="">
+                <span class="icon icon-48 icon-material"></span>
                 <p>Frame material</p>
                 <h6>Polycarbonate</h6>
             </div>
             <div class="feature">
-                <img src="demo/img/3d.svg" alt="">
+                <span class="icon icon-48 icon-lens"></span>
                 <p>Lens Class</p>
                 <h6>100</h6>
             </div>
             <div class="feature">
-                <img src="demo/img/3d.svg" alt="">
-                <p>Lens colour</p>
-                <h6>C3</h6>
-            </div>
-            <div class="feature">
-                <img src="demo/img/3d.svg" alt="">
+                <span class="icon icon-48 icon-size"></span>
                 <p>Tecnology</p>
                 <h6>Polarized</h6>
             </div>

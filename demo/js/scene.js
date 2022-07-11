@@ -26,7 +26,7 @@ const scene = new THREE.Scene()
 
 const camera = new THREE.PerspectiveCamera(  24, container.clientWidth / container.clientHeight, 0.01, 10 )
 camera.position.set(1, 0.5, 1)
-camera.zoom = Math.abs( container.clientWidth / container.clientHeight / Math.sin( camera.fov / 2 ) ) - 0.1;
+camera.zoom = Math.abs( container.clientWidth / container.clientHeight / Math.sin( camera.fov / 2 ) );
 camera.updateProjectionMatrix();
 
 // Orbit Controls
@@ -35,9 +35,9 @@ const controls = new OrbitControls(camera, renderer.domElement)
 controls.target.set( 0, 0, -0.06 );
 controls.enableDamping = true;
 controls.autoRotate  = true;
-controls.autoRotateSpeed = 2;
+controls.autoRotateSpeed = 1;
 controls.enablePan = false;
-controls.maxDistance = 1;
+controls.maxDistance = 1.2;
 controls.minDistance = 0.5;
 
 // HDRI Lightning
