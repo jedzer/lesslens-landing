@@ -27,6 +27,7 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
 
     const img = document.createElement('img')
 
+    tryon.id = 'ar';
     tryon.rel='ar';
     tryon.href = href;
     tryon.appendChild(img);
@@ -40,7 +41,7 @@ if( /iPhone|iPad/i.test(navigator.userAgent) && /AppleWebKit/i.test(navigator.us
     const params = new URLSearchParams( window.location.search );
 
     if (params.has("show_ar")) {
-        document.getElementById(a.id).click();
+        document.getElementById(tryon.id).click();
     }
 
 
