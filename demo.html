@@ -24,7 +24,6 @@
     <link rel="canonical" href="https://lesslens.com/demo">
 
     <link rel="stylesheet" href="demo/style.css">
-    <link rel="stylesheet" href="demo/css/flickity.css" media="screen">
     <script type="module" src="demo/js/tryon.js"></script>
     <script type="module" src="demo/js/scene.js"></script>
 
@@ -40,86 +39,91 @@
 
     <header>
         <div class="menu">
-            <img src="img/logo.svg" alt="logo" class="logo-icon">
-            <div class="logo-title">LESS LENS</div>
-            <p class="icon icon-32 icon-phone"></p>
-            <span>+34645168921</span>
-            <a href="mailto:info@lesslens.com">
-                <p class="icon icon-32 icon-e-mail"></p>
+            <span class="logo">
+                <img src="img/logo.svg" alt="logo" class="logo-icon">
+                <div class="logo-title">LESS LENS</div>
+            </span>
+
+            <a href="mailto:info@lesslens.com" class="icon icon-32 icon-e-mail btn-small btn-green">
+                    <p>Contact us</p>
             </a>
         </div>
         <div class="color-strip"></div>
-
-
-
     </header>
 
     <section>
         <div id="scene">
             <div class="scene-bar">
                 <div class="scene-guide">
-                    <span class="icon icon-32 icon-lmb"></span>
-                    <p>Rotate</p>
-                    <div></div>
-                    <span class="icon icon-32 icon-wheel"></span>
-                    <p>Zoom</p>
+                    <span class="icon icon-32 icon-lmb"><p>Rotate</p></span>
+                    <span class="icon icon-32 icon-wheel"><p>Zoom</p></span>
                 </div>
 
-                <a id="qr">
-                    <span class="icon icon-32 icon-code"></span>
-                    Virtual Try-on on your iPhone
+                <a id="qr" class="icon icon-32 icon-code btn btn-black">
+                    <p>Virtual Try-on on your iPhone</p>
                 </a>
 
-                <a id="tryon">Virtual Try-on</a>
+                <a id="tryon" class="btn btn-black">Virtual Try-on</a>
 
                 <div id="qr-modal">
                     <div id="qr-code"></div>
-                    <p>
-                        These unisex sunglasses in polycarbonate feature round frames, 
-                        and temples that get narrower around the ears, with a colourful 
-                        rubberised insert on the underside of the end tips for better grip.
-                        The other contrast details are quite original too, with a printed 
-                        logo on the temple and an endpiece that wraps from the front to the hinges.
-                    </p>
+                    <span class="icon icon-32 icon-photo">
+                        <p>Open photo app on your iPhone and follow the link</p>
+                    </span>
+
                 </div>
             </div>
         </div>
 
 
         <div class="description">
-            <h1>Ray-Ban</h1>
-            <h2>Clubmaster Square</h2>
+            <div class="title">
+                <h1>Ray-Ban</h1>
+                <h2>Clubmaster Square</h2>
+            </div>
+
             <small>These unisex sunglasses in polycarbonate feature round frames, 
                 and temples that get narrower around the ears, with a colourful 
                 rubberised insert on the underside of the end tips for better grip.
-                 The other contrast details are quite original too, with a printed 
-                 logo on the temple and an endpiece that wraps from the front to the hinges.
             </small>
             <hr>
-            <div class="feature">
-                <span class="icon icon-48 icon-frame"></span>
-                <p>Shape</p>
-                <h6>Round / oval </h6>
+
+            <div class="features">
+                <div class="feature">
+                    <span class="icon icon-48 icon-frame"></span>
+                    <h6>Shape</h6>
+                    <p>Round / Oval </p>
+                </div>
+                <div class="feature">
+                    <span class="icon icon-48 icon-lens"></span>
+                    <h6>Lens Class</h6>
+                    <p>C4 Polarized</p>
+                </div>
+                <div class="feature">
+                    <span class="icon icon-48 icon-size"></span>
+                    <h6>Size</h6>
+                    <p>Standard</p>
+                </div>
+                <div class="feature">
+                    <span class="icon icon-48 icon-material"></span>
+                    <h6>Frame material</h6>
+                    <p>Polycarbonate</p>
+                </div>
             </div>
-            <div class="feature">
-                <span class="icon icon-48 icon-material"></span>
-                <p>Frame material</p>
-                <h6>Polycarbonate</h6>
-            </div>
-            <div class="feature">
-                <span class="icon icon-48 icon-lens"></span>
-                <p>Lens Class</p>
-                <h6>100</h6>
-            </div>
-            <div class="feature">
-                <span class="icon icon-48 icon-size"></span>
-                <p>Tecnology</p>
-                <h6>Polarized</h6>
-            </div>
+
         </div>
 
     </section>
 
-    <footer></footer>
+    <footer>
+        <div>&#169; LessLens inc. <script>document.write(/\d{4}/.exec(Date())[0])</script></div>
+        <span class="icon icon-32 icon-phone">
+            <p>+34645168921</p>
+        </span>
+        <a href="mailto:info@lesslens.com" class="icon icon-32 icon-e-mail"></a>
+        <a href="https://www.instagram.com/less.lens/" target="_blank" class="icon icon-32 icon-instagram"></a>
+
+
+    </footer>
 </body>
 </html>

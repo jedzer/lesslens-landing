@@ -49,7 +49,8 @@ new RGBELoader()
 
     let hdri = pmremGenerator.fromEquirectangular( texture ).texture;
 
-    scene.background = new THREE.Color( BG );
+    // scene.background = new THREE.Color( BG );
+    scene.background = hdri
     scene.environment = hdri;
 
     texture.dispose();
@@ -58,12 +59,21 @@ new RGBELoader()
 let pmremGenerator = new THREE.PMREMGenerator( renderer );
 pmremGenerator.compileEquirectangularShader();
 
-// Plane
 
-// const floor = new THREE.Mesh( new THREE.PlaneGeometry( 0.3, 0.3 ), new THREE.MeshBasicMaterial( {color: BG } ) );
-// floor.rotation.x = Math.PI / -2;
-// floor.position.set( 0, -0.03, -0.08 );
-// scene.add( floor );
+// Sky
+
+const skyGeometry = new THREE.SphereGeometry(5, 24, 24);
+const skyMaterial = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('./demo/sky.png'), side: THREE.BackSide });
+const sky = new THREE.Mesh(skyGeometry, skyMaterial);
+scene.add(sky);
+
+// Plane
+const floorGeometry = new THREE.PlaneGeometry( 0.3, 0.3 );
+const floorMaterial = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('./demo/floor.png'), transparent: true});
+const floor = new THREE.Mesh( floorGeometry, floorMaterial);
+floor.rotation.x = Math.PI / -2;
+floor.position.set( 0, -0.05, -0.08 );
+scene.add( floor );
 
 // Model
 
