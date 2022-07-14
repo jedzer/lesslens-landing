@@ -8,7 +8,7 @@ const pageURL = window.location.href // Triggered page
 const modelURL = 'demo/111.reality' // Relative model path
 const modelScaling = '1' // Allow scaling model in VR
 
-const bannerSize = 'medium' // AR Banner height
+const bannerSize = 'small' // AR Banner height
 const bannerURL = 'https://www.lesslens.com/demo/banner.html' // Banner
 const bannerLink = 'https://apps.apple.com/app/apple-store/id1535675035?pt=122143363&ct=landing&mt=8'
 
