@@ -430,7 +430,6 @@ section {
 }
 
 
-
 footer {
     display: grid;
     white-space: nowrap;
@@ -454,6 +453,9 @@ footer {
         margin-top: calc(64px + 8px);
     }
 
+    .mobile-hide {
+        display: none;
+    }
 
     h1, h2 {
         font-size: 36px;
@@ -465,6 +467,12 @@ footer {
 
     p {
         font-size: 14px;
+    }
+
+    .preheader {
+        grid-template-columns: auto repeat(2, max-content);
+        padding-left: var(--padding2);
+        padding-right: var(--padding2);
     }
 
     .menu {
