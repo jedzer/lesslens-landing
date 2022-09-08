@@ -5,11 +5,11 @@ const qr = document.querySelector('#qr'); // Container id
 
 const pageURL = window.location.href // Triggered page
 
-const modelURL = 'demo/TO.reality' // Relative model path
+const modelURL = 'titanium-optics/TO.reality' // Relative model path
 const modelScaling = '1' // Allow scaling model in VR
 
 const bannerSize = 'small' // AR Banner height
-const bannerURL = 'https://www.lesslens.com/demo/banner.html' // Banner
+const bannerURL = 'https://www.lesslens.com/titanium-optics/banner.html' // Banner
 const bannerLink = 'https://apps.apple.com/app/apple-store/id1535675035?pt=122143363&ct=landing&mt=8'
 
 const href = modelURL + '#allowsContentScaling=' + modelScaling + '&custom=' + bannerURL + '&customHeight=' + bannerSize + '&canonicalWebPageURL=' + pageURL
