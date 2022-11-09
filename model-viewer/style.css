@@ -246,10 +246,6 @@ select:focus, select:active {
 
 @media screen and (max-width: 900px) {
 
-    body {
-        margin-top: calc(64px + 8px);
-    }
-
     .mobile-hide {
         display: none;
     }
@@ -266,37 +262,8 @@ select:focus, select:active {
         font-size: 14px;
     }
 
-    .preheader {
-        grid-template-columns: auto repeat(2, max-content);
-        padding-left: var(--padding2);
-        padding-right: var(--padding2);
-    }
-
-    .menu {
-        height: 64px;
-        padding: 0 16px;
-    }
-
-    section {
-        flex-direction: column;
-    }
-
-    #scene {
-        height: 60vh;
-    }
-
     .scene-bar {
         padding: 16px;
-    }
-
-    .description {
-        width: 100%;
-        padding: 32px 16px 44px;
-        border-left: none;
-        border-top: 1px solid var(--color-black10);
-    }
-    footer {
-        padding: 16px 16px 24px;
     }
     
 }
