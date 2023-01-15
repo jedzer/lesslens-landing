@@ -19,7 +19,7 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div>
+  <div class="content">
       <h1>Privacy Policy</h1>
       <h3>Overview</h3>
       <p>This Privacy Policy covers how LessLens handles your personal information and data.</p>
@@ -54,7 +54,9 @@
 
 <style>
   main {
-    padding: var(--header-height);
+    display: flex;
+    justify-content: center;
+    padding: 150px 0
   }
 
 </style>
