@@ -1,0 +1,60 @@
+<svelte:head>
+  <title>Privacy Policy | LessLens</title>
+  <meta property="og:description" content="Privacy Policy | LessLens. LessLens is a smart home trial app that allows you to try on and purchase your favorite glasses and sunglasses without leaving the comfort of your home.">
+  <meta name="description" content="Privacy Policy | LessLens. LessLens is a smart home trial app that allows you to try on and purchase your favorite glasses and sunglasses without leaving the comfort of your home.">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TWQFHL3');</script>
+  <!-- End Google Tag Manager -->
+</svelte:head>
+
+<main>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe title="tag-manager" src="https://www.googletagmanager.com/ns.html?id=GTM-TWQFHL3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div>
+      <h1>Privacy Policy</h1>
+      <h3>Overview</h3>
+      <p>This Privacy Policy covers how LessLens handles your personal information and data.</p>
+      <h3>Information gathering and usage</h3>
+      <p>We do not collect, use, save, or have access to any of your personal data recorded in the LessLens app. 
+          Individual settings relating to the LessLens app are not personal and are stored only on your device.
+      </p>
+      <h3>Photos, Scans, and Images</h3>
+      <p>We use the functionality of your device’s TrueDepth sensor to take a scan of your face and derive the 
+          specific measurements to optimally display a model of glasses or sunglasses on your face. When you submit 
+          &#40;or grant us permission to take&#41; a photo, facial scan, or other image of you, we don’t share those photos, 
+          scans, images, or any facial data captured in the facial scans, with any third parties.
+      </p>
+      <h3>Children’s Privacy</h3>
+      <p>Our Service does not address anyone under the age of 13 &#40;“Children”&#41;. We do not knowingly
+          collect personally identifiable information from children under 13. If you are a parent or guardian
+          and you are aware that your Child has provided us with Personal Information, please contact us. 
+          If we discover that a Child under 13 has provided us with Personal Information, 
+          we will delete such information from our servers immediately.
+      </p>
+      <h3>Changes To This Privacy Policy</h3>
+      <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting 
+          the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically 
+          for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+      </p>
+      <h3>Deleting Your Data</h3>
+      <p>You can request the deletion of your data at any time by contacting us by <a href="mailto:info@lesslens.com">email</a>.</p>
+      <h3>Contact Us</h3>
+      <p>If you have questions or concerns about data privacy, you can also contact us by email at <a href="mailto:support@lesslens.com">support@lesslens.com</a>.</p>
+  </div>
+</main>
+
+<style>
+  main {
+    padding: var(--header-height);
+  }
+
+</style>
